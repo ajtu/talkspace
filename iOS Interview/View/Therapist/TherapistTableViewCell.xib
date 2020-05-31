@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="therapistCell" id="KGk-i7-Jjw" customClass="TherapistTableViewCell" customModule="iOS_Interview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEw-it-vBC">
+                        <rect key="frame" x="8" y="6" width="75" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="Rrv-XG-L8g"/>
+                            <constraint firstAttribute="width" constant="75" id="oK4-wa-1Pc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ph.D since 10/20/2006" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1N-6K-FsG">
+                        <rect key="frame" x="85" y="10" width="241" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="241" id="yYI-D6-eYv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On Duty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaV-eR-pOH">
+                        <rect key="frame" x="8" y="35" width="53" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:00am to 1:00pm." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQE-Na-AVx">
+                        <rect key="frame" x="85" y="35" width="135" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 hr 17 min till end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dL-7I-WCv">
+                        <rect key="frame" x="230" y="35" width="104" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PEw-it-vBC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NiP-8v-yg5"/>
+                    <constraint firstItem="PEw-it-vBC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="ldB-Su-648"/>
+                    <constraint firstItem="l1N-6K-FsG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qlu-Zp-9cW"/>
+                    <constraint firstItem="l1N-6K-FsG" firstAttribute="leading" secondItem="PEw-it-vBC" secondAttribute="trailing" constant="2" id="z18-q3-FQQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="PEw-it-vBC" id="L55-sy-KdE"/>
+                <outlet property="onDutyLabel" destination="yaV-eR-pOH" id="FNc-cC-xfy"/>
+                <outlet property="primaryLicenseLabel" destination="l1N-6K-FsG" id="PJS-bq-ejV"/>
+                <outlet property="shiftTimeLabel" destination="nQE-Na-AVx" id="YpA-X4-kz5"/>
+                <outlet property="timeUntilShiftEndsOrStartsLabel" destination="7dL-7I-WCv" id="TpO-Ik-shP"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </tableViewCell>
+    </objects>
+</document>

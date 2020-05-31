@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Interview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Ep-2K-cue"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mmt-nz-HUS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5u8-qw-gdD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Therapist Roster" id="iMj-wW-VvC"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yYo-us-5l6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="31k-OF-9ca"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5Bk-62-OnA"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hax-ak-ooM">
+                                <rect key="frame" x="144.5" y="792" width="125" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1bj-W8-k3e"/>
+                                    <constraint firstAttribute="width" constant="125" id="JEu-at-KhO"/>
+                                </constraints>
+                                <state key="normal" title="On Duty">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onDutyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qcg-HR-6Hw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFi-QC-AYE">
+                                <rect key="frame" x="288.5" y="792" width="125.5" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Starting Soon">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startingSoonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ccg-SM-1bP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-9z-WC3">
+                                <rect key="frame" x="0.0" y="792" width="124.5" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Gaps">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gapsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dBr-AT-eqD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mmt-nz-HUS" firstAttribute="top" secondItem="yYo-us-5l6" secondAttribute="bottom" id="1fc-Eh-iOj"/>
+                            <constraint firstItem="Hax-ak-ooM" firstAttribute="baseline" secondItem="NUl-9z-WC3" secondAttribute="firstBaseline" id="1u2-1o-r6Y"/>
+                            <constraint firstItem="yYo-us-5l6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5jZ-9z-yb8"/>
+                            <constraint firstItem="Hax-ak-ooM" firstAttribute="top" secondItem="NUl-9z-WC3" secondAttribute="top" id="7gD-uL-pmV"/>
+                            <constraint firstItem="NUl-9z-WC3" firstAttribute="leading" secondItem="yYo-us-5l6" secondAttribute="leading" id="AV0-NJ-9to"/>
+                            <constraint firstItem="Hax-ak-ooM" firstAttribute="baseline" secondItem="JFi-QC-AYE" secondAttribute="firstBaseline" id="Iq6-mU-2jd"/>
+                            <constraint firstAttribute="trailing" secondItem="yYo-us-5l6" secondAttribute="trailing" id="O4g-e8-mBE"/>
+                            <constraint firstItem="JFi-QC-AYE" firstAttribute="leading" secondItem="Hax-ak-ooM" secondAttribute="trailing" constant="19" id="Tds-Vb-lxz"/>
+                            <constraint firstAttribute="trailing" secondItem="5u8-qw-gdD" secondAttribute="trailing" id="UwD-2f-JLt"/>
+                            <constraint firstItem="Hax-ak-ooM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X2f-yp-jRz"/>
+                            <constraint firstItem="Hax-ak-ooM" firstAttribute="top" secondItem="JFi-QC-AYE" secondAttribute="top" id="i7e-BV-LaG"/>
+                            <constraint firstItem="yYo-us-5l6" firstAttribute="top" secondItem="5u8-qw-gdD" secondAttribute="bottom" id="kc9-gO-eoD"/>
+                            <constraint firstItem="8Ep-2K-cue" firstAttribute="bottom" secondItem="5u8-qw-gdD" secondAttribute="top" id="kwv-4j-AHX"/>
+                            <constraint firstItem="5u8-qw-gdD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p8M-Gu-f1Q"/>
+                            <constraint firstItem="Mmt-nz-HUS" firstAttribute="top" secondItem="Hax-ak-ooM" secondAttribute="bottom" constant="20" id="pYr-ZS-Bac"/>
+                            <constraint firstItem="JFi-QC-AYE" firstAttribute="trailing" secondItem="yYo-us-5l6" secondAttribute="trailing" id="xJ9-2g-Mbq"/>
+                            <constraint firstItem="Hax-ak-ooM" firstAttribute="leading" secondItem="NUl-9z-WC3" secondAttribute="trailing" constant="20" id="zj9-7f-VN0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="yYo-us-5l6" id="jjZ-hP-wHv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="125"/>
+        </scene>
+    </scenes>
+</document>
